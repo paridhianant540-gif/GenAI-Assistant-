@@ -20,7 +20,30 @@ The goal of this project is to build a GenAI-powered chat assistant using Retrie
  ### Architecture diagram
 
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/d684c5fd-026c-41d0-ab0e-6bf8dcd24201" />
+
+```mermaid
+flowchart TD
+
+A[User] --> B[Frontend Chat UI]
+
+B --> C[Flask Backend API]
+
+C --> D[Generate Query Embedding]
+
+D --> E[Vector Database]
+
+E --> F[Similarity Search Top-K]
+
+F --> G[Retrieve Relevant Document Chunks]
+
+G --> H[Prompt Builder]
+
+H --> I[LLM API Gemini / OpenAI]
+
+I --> J[Generated Answer]
+
+J --> B
+```
 
 
 
