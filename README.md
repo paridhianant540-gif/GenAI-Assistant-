@@ -1,5 +1,5 @@
 # GenAI-Assistant
-The goal of this project is to build a GenAI-powered chat assistant using Retrieval-Augmented Generation (RAG). It converts documents into embeddings, stores them for similarity search, and retrieves relevant context to generate accurate, reliable responses to user queries based on the provided documents.
+The goal of this project is to build a GenAI-powered chat assistant using Retrieval-Augmented Generation (RAG). It converts documents into embeddings, stores them for similarity search, and retrieves relevant context to generate accurate, reliable responses to user queries.
 
 # Tools and Technologies
 
@@ -17,8 +17,12 @@ The goal of this project is to build a GenAI-powered chat assistant using Retrie
 - Sufficient RAM (at least 8GB recommended for smooth operation)
 
 
-Architecture diagram
+ ### Architecture diagram
+
+
 <img width="455" height="684" alt="image" src="https://github.com/user-attachments/assets/d684c5fd-026c-41d0-ab0e-6bf8dcd24201" />
+
+
 
 
 
