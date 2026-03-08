@@ -17,6 +17,11 @@ The goal of this project is to build a GenAI-powered chat assistant using Retrie
 - Sufficient RAM (at least 8GB recommended for smooth operation)
 
 
+Architecture diagram
+<img width="455" height="684" alt="image" src="https://github.com/user-attachments/assets/d684c5fd-026c-41d0-ab0e-6bf8dcd24201" />
+
+
+
 ## Step-by-Step Instructions
 
 # Set up Project Environment
