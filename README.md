@@ -160,7 +160,7 @@ Prompt design is an important part of a Retrieval-Augmented Generation (RAG) sys
     
     ```bash
     git clone https://github.com/paridhianant540-gif/GenAI-Assistant-.git
-    cd genai_chat_assistant
+    cd GenAI-Assistant-
     ```
 
 
