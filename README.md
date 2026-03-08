@@ -132,69 +132,61 @@ Prompt design is an important part of a Retrieval-Augmented Generation (RAG) sys
 
 ## Step-by-Step Instructions
 
-# Set up Project Environment
 
-1️ Clone the Repository
+1. **Clone the Repository**:
+    
+    ```bash
+    git clone https://github.com/paridhianant540-gif/GenAI-Assistant-.git
+    cd genai_chat_assistant
+    ```
 
 
-First, download the project from GitHub.
-git clone https://github.com/paridhianant540-gif/GenAI-Assistant-.git
+2. **Set up Project Environment**:
+   
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
 
-cd rag-chat-assistant
+3. **Install Required Dependencies**:
+   
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2️ Create a Virtual Environment
-Create and activate a Python virtual environment.
-Windows
+4. **Configure Environment Variables**:
+   
+   Create a .env file in the root directory and add your API key.
+    ```bash
+    Example:
+    GEMINI_API_KEY=your_api_key_here
+    ```
 
-python -m venv venv
-venv\Scripts\activate
 
-Mac/Linux
+5. **Prepare the Knowledge Base**:
+   
+   Create a docs.json file containing 5–10 documents that will act as the knowledge base.
+    ```bash
+    [
+      {
+        "title": "Reset Password",
+        "content": "Users can reset their password from Settings > Security."
+      }
+    ]
+    ```
 
-python3 -m venv venv
-source venv/bin/activate
-3️ Install Required Dependencies
+6. **Run the Application**:
+   
+   Start the Flask backend server.
+    ```bash
+        python app.py
+    
+        The server will start locally, usually at:
+    
+        http://127.0.0.1:5000
+    ```
 
-Install all required Python packages.
-
-pip install -r requirements.txt
-
-4️ Configure Environment Variables
-
-Create a .env file in the root directory and add your API key.
-
-Example:
-
-GEMINI_API_KEY=your_api_key_here
-
-This key will be used to connect with the Large Language Model API.
-
-5️ Prepare the Knowledge Base
-
-Create a docs.json file containing 5–10 documents that will act as the knowledge base.
-
-Example:
-
-[
-  {
-    "title": "Reset Password",
-    "content": "Users can reset their password from Settings > Security."
-  }
-]
-
-The system will chunk these documents and generate embeddings for retrieval.
-
-6️ Run the Application
-
-Start the Flask backend server.
-
-python app.py
-
-The server will start locally, usually at:
-
-http://127.0.0.1:5000
-
-7️ Open the Chat Interface
+7️. **Open the Chat Interface**:
 
 Open the browser and visit the local URL to access the chat interface.
 You can now ask questions, and the assistant will retrieve relevant documents and generate responses using the RAG pipeline.
